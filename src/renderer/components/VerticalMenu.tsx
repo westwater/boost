@@ -1,6 +1,5 @@
 import * as React from 'react';
-import { Accordion, Button, Icon } from 'semantic-ui-react';
-import { AccordionTitleProps } from 'semantic-ui-react/dist/commonjs/modules/Accordion/AccordionTitle';
+import { Accordion, Button, Icon, AccordionTitleProps } from 'semantic-ui-react';
 import * as _ from 'lodash';
 
 interface Content {

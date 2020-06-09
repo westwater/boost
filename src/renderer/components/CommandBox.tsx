@@ -38,9 +38,7 @@ export default class CommandBox extends React.Component<Props, State> {
                     error={inputError}
                 />
 
-                <Form.Button
-                    icon={'arrow right'}
-                >
+                <Form.Button>
                     Submit
                 </Form.Button>
 
@@ -75,9 +73,9 @@ export default class CommandBox extends React.Component<Props, State> {
             });
 
             child.stdout.on('data', data => {
-                this.resetErrors()
-                outputBuffer.push(data.toString())
-                this.setState({ output: outputBuffer })
+                this.resetErrors();
+                outputBuffer.push(data.toString());
+                this.setState({ output: outputBuffer });
             });
 
             child.stderr.on('data', data => {
